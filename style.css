@@ -1,0 +1,236 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header{
+    background-color: burlywood;
+}
+
+.nav_container{
+    display: flex;
+    align-items: center;
+    padding: .5em 0;
+}
+
+.nav_logo{
+    margin-right: 3em;
+    position: relative;
+}
+.nav_logo_span{
+    color: red;
+    font-size: .9rem;
+    font-weight: bold;
+    position: absolute;
+}
+
+.nav_nav{
+    margin-right: auto;
+}
+
+.nav_list{
+    display: flex;
+    column-gap: 1.5em;
+}
+
+.nav_item{
+    padding: .5em;
+}
+
+.nav_link{
+    color: black;
+    text-transform: uppercase;
+    font-size: .7rem;
+    transition: all 500ms ease-in-out;
+}
+
+.nav_link:hover{
+    border-bottom: 2px solid black;
+}
+
+.nav_actions{
+    display: flex;
+    gap: 1em;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+.nav_actions a {
+    color: black;
+}
+
+.nav_actions .signup:hover {
+    border-bottom: 2px solid black;
+}
+
+/* Change with Javascript */
+.nav_actions .english{
+    color: red;
+}
+
+/* Hero */
+
+.hero_container{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    max-height: 70vh;
+}
+
+.hero_intro{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.hero_text h1{
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero_text .hero_pics{
+    padding-left: .2em;
+}
+
+.hero_text .hero_pics img{
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-left: -.2em;
+}
+
+.hero_actions{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    gap: 1em;
+    height: 1em;
+}
+
+.hero_actions a {
+    font-size: .7rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.628);
+    transition: all 500ms ease-in-out;
+}
+
+.hero_actions a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.hero_image{
+    height: 70vh;
+    width: 100%;
+}
+.hero_image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Features  */
+
+.features_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.feature_card{
+    width: 100%;
+    height: 20vh;
+    padding: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.card2 .card_top,
+.card3 .card_top,
+.card4 .card_top {
+    font-size: 0.8rem;
+}
+
+
+.feature_card a {
+    color: black;
+}
+
+.card1 .card_top a{
+    font-size: .8rem;
+}
+
+.card1 .card_bottom{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.card1 .card_bottom a {
+    border: 1px solid black;
+    border-radius: 1em;
+    display: block;
+    width: fit-content;
+    padding: .2em .5em;
+    margin-top: .3em;
+    
+}
+
+.card2{
+    border: 1px solid black;
+    padding: 1.5em;
+    background-color: brown;
+}
+
+
+.card2 .card_bottom{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.card3 {
+    padding: 1.5em;
+}
+
+.card4{
+    border: 1px solid black;
+    padding-left: 1.5em;
+    background-color: rgb(207, 204, 204);
+}
+
+.card4 .card_bottom{
+    font-size: 3rem;
+    position: relative;
+}
+
+.card4 .card_bottom span {
+    font-size: 2rem;
+    color: red;
+    position: absolute;
+    top: -10px;
+}
